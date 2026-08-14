@@ -23,7 +23,7 @@ import traceback
 
 APB_SIZE = 3
 
-exp = Experiment("ns3ai_apb_msg_vec", "../../../../../", py_binding,
+exp = Experiment("ns3ai_apb_msg_vec", "/home/asv74/projects/ns-3.46.1", py_binding,
                  handleFinish=True, useVector=True, vectorSize=APB_SIZE)
 msgInterface = exp.run(show_output=True)
 

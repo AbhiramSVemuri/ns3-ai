@@ -376,7 +376,7 @@ class Ns3AiMsgInterface : public Singleton<Ns3AiMsgInterface>
             this->m_py2cppMsgName.c_str(),
             this->m_lockableName.c_str());
         return &interface;
-    };
+    }
 
   private:
     bool m_isMemoryCreator;

@@ -32,7 +32,6 @@ PYBIND11_MAKE_OPAQUE(ns3::Ns3AiMsgInterfaceImpl<EnvStruct, ActStruct>::Py2CppMsg
 PYBIND11_MODULE(ns3ai_apb_py_vec, m)
 {
     py::class_<EnvStruct>(m, "PyEnvStruct")
-        .def(py::init<>())
         .def_readwrite("a", &EnvStruct::env_a)
         .def_readwrite("b", &EnvStruct::env_b);
 
